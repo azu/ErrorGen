@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ErrorGen.h"
 
 @interface ErrorGenTests : XCTestCase
 
@@ -14,21 +15,34 @@
 
 @implementation ErrorGenTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown {
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testGenerateError {
+    NSError *error = [ErrorGen errorWithDescription:@"desc"];
+    XCTAssert([error isKindOfClass:[NSError class]]);
 }
 
+- (void)testErrorDomainIsBundleIdentifier {
+    NSString *string = @"desc";
+    NSError *error = [ErrorGen errorWithDescription:string];
+    NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+    XCTAssertEqualObjects(error.domain, bundleIdentifier);
+}
+- (void)testErrorWithDescription {
+    NSString *string = @"desc";
+    NSError *error = [ErrorGen errorWithDescription:string];
+    XCTAssertNotEqualObjects(error.description, string);
+}
+
+- (void)testErrorWithLocalizedDescription {
+    NSString *string = @"desc";
+    NSError *error = [ErrorGen errorWithDescription:string];
+    XCTAssertEqualObjects(error.localizedDescription, string);
+}
 @end

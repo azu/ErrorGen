@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17B5C4E79B959BA003D403C6 /* ErrorGen.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C3DC42C1165069CA3EF0 /* ErrorGen.m */; };
+		17B5CE525513CB71A2511F5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CE7BC5A0EDA4C798EBCA /* README.md */; };
 		73EE8D821941B23A003E7C81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EE8D811941B23A003E7C81 /* Foundation.framework */; };
 		73EE8D841941B23A003E7C81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EE8D831941B23A003E7C81 /* CoreGraphics.framework */; };
 		73EE8D861941B23A003E7C81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EE8D851941B23A003E7C81 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17B5C3DC42C1165069CA3EF0 /* ErrorGen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorGen.m; sourceTree = "<group>"; };
+		17B5CA89C9B961BA87C48366 /* ErrorGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorGen.h; sourceTree = "<group>"; };
+		17B5CE7BC5A0EDA4C798EBCA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		73EE8D7E1941B23A003E7C81 /* ErrorGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErrorGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EE8D811941B23A003E7C81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		73EE8D831941B23A003E7C81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17B5CE8A968C0CE183D6A256 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C3DC42C1165069CA3EF0 /* ErrorGen.m */,
+				17B5CA89C9B961BA87C48366 /* ErrorGen.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		73EE8D751941B23A003E7C81 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +100,8 @@
 				73EE8DA61941B23B003E7C81 /* ErrorGenTests */,
 				73EE8D801941B23A003E7C81 /* Frameworks */,
 				73EE8D7F1941B23A003E7C81 /* Products */,
+				17B5CE8A968C0CE183D6A256 /* Classes */,
+				17B5CE7BC5A0EDA4C798EBCA /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +247,7 @@
 				73EE8D9A1941B23B003E7C81 /* Images.xcassets in Resources */,
 				73EE8D8C1941B23A003E7C81 /* InfoPlist.strings in Resources */,
 				73EE8D951941B23B003E7C81 /* Main.storyboard in Resources */,
+				17B5CE525513CB71A2511F5A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +269,7 @@
 				73EE8D981941B23B003E7C81 /* ViewController.m in Sources */,
 				73EE8D921941B23B003E7C81 /* AppDelegate.m in Sources */,
 				73EE8D8E1941B23A003E7C81 /* main.m in Sources */,
+				17B5C4E79B959BA003D403C6 /* ErrorGen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
