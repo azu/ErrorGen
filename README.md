@@ -1,4 +1,9 @@
-# ErrorGen
+# ErrorGen [![Build Status](http://img.shields.io/azu/ErrorGen.svg)](https://travis-ci.org/azu/ErrorGen)
+
+[![Version](https://img.shields.io/cocoapods/v/ErrorGen.svg?style=flat)](http://cocoadocs.org/docsets/ErrorGen)
+[![License](https://img.shields.io/cocoapods/l/ErrorGen.svg?style=flat)](http://cocoadocs.org/docsets/ErrorGen)
+[![Platform](https://img.shields.io/cocoapods/p/ErrorGen.svg?style=flat)](http://cocoadocs.org/docsets/ErrorGen)
+
 
 A small library to create `NSError` with description.
 
