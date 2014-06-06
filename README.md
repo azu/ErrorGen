@@ -1,4 +1,4 @@
-# ErrorGen [![Build Status](http://img.shields.io/azu/ErrorGen.svg)](https://travis-ci.org/azu/ErrorGen)
+# ErrorGen [![Build Status](http://img.shields.io/travis/azu/ErrorGen.svg?style=flat)](https://travis-ci.org/azu/ErrorGen)
 
 [![Version](https://img.shields.io/cocoapods/v/ErrorGen.svg?style=flat)](http://cocoadocs.org/docsets/ErrorGen)
 [![License](https://img.shields.io/cocoapods/l/ErrorGen.svg?style=flat)](http://cocoadocs.org/docsets/ErrorGen)
